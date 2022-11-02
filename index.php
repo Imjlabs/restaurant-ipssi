@@ -19,4 +19,7 @@ else {
     else if ($_GET['action'] == "connection") {
         require_once "View/connection.php";
     }
+    else if ($_GET['action'] == "registration") {
+        require_once "View/registration.php";
+    }
 }

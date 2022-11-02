@@ -1,6 +1,6 @@
 <?php
 
-$title = "Reservation";
+$title = "Inscription";
 require_once "./Template/nav.php";
 
 ?>

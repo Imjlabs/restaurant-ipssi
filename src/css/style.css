@@ -1,4 +1,4 @@
-body {
+body, p {
     margin: 0;
 }
 
@@ -11,7 +11,6 @@ nav {
 }
 
 a {
-    color: #000;
     text-decoration: none;
 }
 
@@ -19,7 +18,53 @@ h1 {
     margin: 0;
 }
 
-.link {
+.title_nav, .link_nav {
+    color: #000;
+}
+
+.link_nav {
     border-bottom: 1px solid #000;
     margin-right: 30px;
+}
+
+section {
+    min-height: 462px;
+}
+
+footer, .link_footer {
+    color: #fff;
+}
+
+footer {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.bloc {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+    width: 300px;
+}
+
+.title_footer {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.information {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.link_footer {
+    color: #fff;
+    text-decoration: none;
+}
+
+img {
+    width: 20px;
+    margin-right: 5px;
 }

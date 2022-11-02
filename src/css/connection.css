@@ -1,0 +1,31 @@
+.connection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background-color: #f0f0f0;
+    border: none;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    width: 200px;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    height: 30px;
+    margin-bottom: 5px;
+    width: 100px;
+}
+
+#registration {
+    border-bottom: #000 solid 1px;
+    color: #000;
+    text-decoration: none;
+}

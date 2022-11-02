@@ -9,15 +9,13 @@
 </head>
 <body>
     <nav>
-        <a href="index.php"><h1>Restaurant</h1></a>
+        <a class="title_nav" href="index.php"><h1>Restaurant</h1></a>
         <div>
-            <a class="link" href="./index.php">Accueil</a>
-            <a class="link" href="./index.php?action=menu">La carte</a>
-            <a class="link" href="./index.php?action=history">Notre histoire</a>
-            <a class="link" href="./index.php?action=reservation">Réservation</a>
-            <a class="link" href="./index.php?action=contact">Contact</a>
-            <a class="link" href="./index.php?action=connection">Connexion</a>
+            <a class="link_nav" href="./index.php">Accueil</a>
+            <a class="link_nav" href="./index.php?action=menu">La carte</a>
+            <a class="link_nav" href="./index.php?action=history">Notre histoire</a>
+            <a class="link_nav" href="./index.php?action=reservation">Réservation</a>
+            <a class="link_nav" href="./index.php?action=contact">Contact</a>
+            <a class="link_nav" href="./index.php?action=connection">Connexion</a>
         </div>
     </nav>
-</body>
-</html>
