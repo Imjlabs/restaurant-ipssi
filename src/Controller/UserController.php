@@ -52,7 +52,7 @@ class UserController extends DefaultController {
 
     public function registrationConfirmation()
     {
-        $this->render("user/login", null, "Connexion");
+        $this->render("user/registrationConfirmation", null, "Connexion");
     }
 
     public function login()

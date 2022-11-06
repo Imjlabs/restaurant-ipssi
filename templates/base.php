@@ -123,3 +123,8 @@
 
 			</div>
 		</div>
+	</footer>
+	<?php foreach($scripts as $script) : ?>
+		<?= $script ?>
+	<?php endforeach; ?>
+</html>
