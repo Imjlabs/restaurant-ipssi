@@ -98,7 +98,7 @@
 		</div>
 	</header>
 	<?= $content ?>
-	<footer class="footer-area section-gap mt-15">
+	<footer class="footer-area section-gap">
 		<div class="container">
 			<div class="row d-flex justify-content-between">
 				<div class="bloc">
