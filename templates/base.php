@@ -65,7 +65,7 @@
 
 								<li class="nav-item dropdown">
 									<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-										Résersation et Commande
+										Réservation et Commande
 									</a>
 									<div class="dropdown-menu">
 										<style>
