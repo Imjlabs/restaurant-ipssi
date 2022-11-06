@@ -27,14 +27,11 @@ class UserController extends DefaultController {
 
     public function valideRegistration()
     {
-        if(isset($_GET['firstName']) && isset($_GET['lastName']) && isset($_GET['adress']) && isset($_GET['phone']) && isset($_GET['city']) && isset($_GET['email']) && isset($_GET['password'])) {
-            $firstName = $_GET['firstName'];
-            $lastName = $_GET['lastName'];
-            $adress = $_GET['adress'];
-            $phone = $_GET['phone'];
-            $city = $_GET['city'];
+        if(isset($_GET['name']) && isset($_GET['email']) && isset($_GET['password']) && isset($_GET['phone_number'])) {
+            $fullname = $_GET['name'];
             $email = $_GET['email'];
             $password = $_GET['password'];
+            $phone_number = $_GET['phone_number'];
         }
         else {
             throw new \UnexpectedValueException("Les champs ne sont pas tous bien remplis");
@@ -43,13 +40,19 @@ class UserController extends DefaultController {
         //var_dump($user);
         $status = "erreur";
         if ($user == false) {
-            $this->add($firstName, $lastName, $adress, $phone, $city, $email, "customer", $password);
+            $hash_password = hash('sha256', $password);
+            $this->add($fullname, $email, $hash_password, $phone_number, 0, 0);
             $status = "valide";
         }
         $response = [
-            "1" => $status
+            "status" => $status
         ];
         echo json_encode($response);
+    }
+
+    public function registrationConfirmation()
+    {
+        $this->render("user/login", null, "Connexion");
     }
 
     public function login()
@@ -63,47 +66,45 @@ class UserController extends DefaultController {
         ]);
     }
 
-    // public function valideConnexion()
-    // {
-    //     if(isset($_GET['email']) && isset($_GET['password'])) {
-    //         $email = $_GET['email'];
-    //         $password = $_GET['password'];
-    //     }
-    //     else {
-    //         throw new \UnexpectedValueException("Au moins un des 2 champs n'est pas bien remplis");
-    //     }
-    //     $user = $this->model->find($email);
-    //     if ($email = $user["email"]) {
-    //         if ($password = $user["password"]) {
-    //             return $user;
-    //         }
-    //         else {
-    //             return "error";
-    //         }
-    //     }
-    //     else {
-    //         return "error";
-    //     }
-    //     return $user;
-
-    // }
+    public function valideLogin()
+    {
+        if(isset($_GET['email']) && isset($_GET['password'])) {
+            $email = $_GET['email'];
+            $password = $_GET['password'];
+        }
+        else {
+            throw new \UnexpectedValueException("Au moins un des 2 champs n'est pas remplis");
+        }
+        $user = $this->model->findByEmail($email);
+        $status = "erreur";
+        if ($user != false) {
+            if ($password == $user["password"]) {
+                $status = "valide";
+                $_SESSION['user'] = $user;
+            }
+        }
+        $response = [
+            "status" => $status
+        ];
+        echo json_encode($response);
+    }
 
     public function logout ()
     {
         session_destroy();
     }
 
-    public function add ($firstName, $lastName, $adress, $phone, $city, $email, $status, $password)
+    public function add ($fullname, $email, $password, $phone_number, $status, $admin)
     {
         $user = new User;
-        $user->setFirstName($firstName);
-        $user->setLastName($lastName);
-        $user->setAdress($adress);
-        $user->setPhone($phone);
-        $user->setCity($city);
+        $user->setFullName($fullname);
         $user->setEmail($email);
-        $user->setStatus($status);
         $user->setPassword($password);
+        $user->setPhoneNumber($phone_number);
+        $user->setStatus($status);
+        $user->setAdmin($admin);
+        $user->setCreated_at(date( "Y/m/d H:i:s"));
+        $user->setUpdated_at(date( "Y/m/d H:i:s"));
         $this->model->save($user);
     }
 }

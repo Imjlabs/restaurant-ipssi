@@ -33,6 +33,9 @@ else {
     else if ($_GET['action'] == "valideRegistration") {
         echo (new UserController)->valideRegistration();
     }
+    else if ($_GET['action'] == "registrationConfirmation") {
+        echo (new UserController)->registrationConfirmation();
+    }
     else if ($_GET['action'] == "logout") {
         echo (new UserController)->logout();
     }

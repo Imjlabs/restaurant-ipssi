@@ -32,7 +32,7 @@
                 </span>
 
                 <div class="wrap-input100 validate-input m-b-23">
-                    <input class="input100" type="email" id="email" placeholder="Emaiil">
+                    <input class="input100" type="email" id="email" placeholder="Email">
                 </div>
 
                 <div class="wrap-input100 validate-input">

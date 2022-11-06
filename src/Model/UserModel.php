@@ -5,26 +5,26 @@ use App\Entity\User;
 use Core\Model\DefaultModel;
 
 class UserModel extends DefaultModel {
-    protected string $table = 'user';
+    protected string $table = 'users';
     protected string $entity = 'User';
 
     public function findByEmail (string $email)
     {
-        $stmt = "SELECT * FROM user WHERE email = '$email'"; 
+        $stmt = "SELECT * FROM users WHERE email = '$email'"; 
         return $this->getData($stmt, true);
     }
 
     public function save(User $user)
     {
-        $firstName = $user->getFirstName();
-        $lastName = $user->getLastName();
-        $adress = $user->getAdress();
-        $phone = $user->getPhone();
-        $city = $user->getCity();
+        $fullname = $user->getFullName();
         $email = $user->getEmail();
-        $status = $user->getStatus();
         $password = $user->getPassword();
-        $stmt = "INSERT INTO user (firstName, lastName, adress, phone, city, email, status, password) VALUES ('$firstName', '$lastName', '$adress', '$phone', '$city', '$email', '$status', '$password')";
+        $phone_number = $user->getPhoneNumber();
+        $status = $user->getStatus();
+        $admin = $user->getAdmin();
+        $created_at = $user->getCreated_at();
+        $updated_at = $user->getUpdated_at();
+        $stmt = "INSERT INTO users (fullname, email, password, phone_number, status, admin, created_at, updated_at) VALUES ('$fullname', '$email', '$password', '$phone_number', '$status', '$admin', '$created_at', '$updated_at')";
         $prepare = $this->pdo->prepare($stmt);
         $prepare->execute();
     }

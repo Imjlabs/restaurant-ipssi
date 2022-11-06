@@ -4,14 +4,14 @@ namespace App\Entity;
 class User {
 
     private int $id;
-    private string $firstName;
-    private string $lastName;
-    private string $adress;
-    private string $phone;
-    private string $city;
+    private string $fullname;
     private string $email;
-    private string $status;
     private string $password;
+    private string $phone_number;
+    private int $status;
+    private int $admin;
+    private string $created_at;
+    private string $updated_at;
 
     public function getId(): int
     {
@@ -23,54 +23,14 @@ class User {
         $this->id = $id;
     }
 
-    public function getFirstName(): string
+    public function getFullName(): string
     {
-        return $this->firstName;
+        return $this->fullname;
     }
 
-    public function setFirstName(string $firstName)
+    public function setFullName(string $fullname)
     {
-        $this->firstName = $firstName;
-    }
-
-    public function getLastName(): string
-    {
-        return $this->lastName;
-    }
-
-    public function setLastName(string $lastName)
-    {
-        $this->lastName = $lastName;
-    }
-
-    public function getAdress(): string
-    {
-        return $this->adress;
-    }
-
-    public function setAdress(string $adress)
-    {
-        $this->adress = $adress;
-    }
-
-    public function getPhone(): string
-    {
-        return $this->phone;
-    }
-
-    public function setPhone(string $phone)
-    {
-        $this->phone = $phone;
-    }
-    
-    public function getCity(): string
-    {
-        return $this->city;
-    }
-
-    public function setCity(string $city)
-    {
-        $this->city = $city;
+        $this->fullname = $fullname;
     }
 
     public function getEmail(): string
@@ -83,6 +43,26 @@ class User {
         $this->email = $email;
     }
 
+    public function getPassword(): string
+    {
+        return $this->password;
+    }
+
+    public function setPassword(string $password)
+    {
+        $this->password = $password;
+    }
+
+    public function getPhoneNumber(): string
+    {
+        return $this->phone_number;
+    }
+
+    public function setPhoneNumber(string $phone_number)
+    {
+        $this->phone_number = $phone_number;
+    }
+
     public function getStatus(): string
     {
         return $this->status;
@@ -93,13 +73,32 @@ class User {
         $this->status = $status;
     }
 
-    public function getPassword(): string
+    public function getAdmin(): string
     {
-        return $this->password;
+        return $this->admin;
     }
 
-    public function setPassword(string $password)
+    public function setAdmin(string $admin)
     {
-        $this->password = $password;
+        $this->admin = $admin;
+    }
+
+    public function getCreated_at(): string
+    {
+        return $this->created_at;
+    }
+
+    public function setCreated_at(string $created_at)
+    {
+        $this->created_at = $created_at;
+    }
+    public function getUpdated_at(): string
+    {
+        return $this->updated_at;
+    }
+
+    public function setUpdated_at(string $updated_at)
+    {
+        $this->updated_at = $updated_at;
     }
 }
