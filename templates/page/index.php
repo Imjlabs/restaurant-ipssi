@@ -4,7 +4,7 @@
 			<div class="home-banner-content col-lg-5">
 				<h1>
 					<p>Restaurant IPSSI</p>
-					
+
 				</h1>
 				<hr>
 			</div>
@@ -246,7 +246,6 @@
 							<img src="./src/pictures/callaction-bg.jpg" class="img-fluid" alt="">
 						</div>
 						<div class="text-box text-center">
-
 							<p>
 								Steak au poulet avec pain à l'ail et frite
 							</p>
@@ -265,7 +264,7 @@
 						</div>
 					</div>
 
-					<div class="item">
+					<div class="item  mb-20">
 
 						<div class="text-box text-center">
 

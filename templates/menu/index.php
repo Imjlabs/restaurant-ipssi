@@ -1,19 +1,12 @@
 <section class="banner-area relative">
-		<div class="container">
-			<div class="row height align-items-center justify-content-center">
-				<div class="banner-content col-lg-5">
-					<h1></h1>
-					<hr>
-					<div class="breadcrmb">
-						<p>
-							<a href="index2.html"></a>
-							<span class=""></span>
-							<a href="menu.html"></a>
-						</p>
-					</div>
-				</div>
+	<div class="container">
+		<div class="row height align-items-center justify-content-center">
+			<div class="banner-content col-lg-5">
+				<h1>Nos Menus</h1>
+				<hr>
 			</div>
 		</div>
+<<<<<<< Updated upstream
 	</section>
 
 <table>
@@ -703,3 +696,7 @@ Treat your taste buds to spicy, crunchy, juicy chicken that sets your taste buds
 
 </div>
 </table>
+=======
+	</div>
+</section>
+>>>>>>> Stashed changes

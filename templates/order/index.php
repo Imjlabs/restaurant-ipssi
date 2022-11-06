@@ -3,16 +3,16 @@
         <div class="card card-3">
             <div class="card-heading"></div>
             <div class="card-body">
-                <h2 class="title">Online Food Ordering</h2>
+                <h2 class="title">Commande</h2>
                 <form method="POST" action="order.php">
                     <div class="input-group">
                         <input class="input--style-3" type="text" placeholder="Item Name" name="name">
                     </div>
                     <div class="input-group">
                         <input class="input--style-3" type="number" placeholder="Quantity" name="quantity">
-                        
+
                     </div>
-                    
+
                     <div class="input-group">
                         <input class="input--style-3" type="number" placeholder="Total Amount" name="amount">
                     </div>
