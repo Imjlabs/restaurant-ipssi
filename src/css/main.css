@@ -1,13 +1,5 @@
-/*--------------------------- Color variations ----------------------*/
-/* Medium Layout: 1280px */
-/* Tablet Layout: 768px */
-/* Mobile Layout: 320px */
-/* Wide Mobile Layout: 480px */
-/* =================================== */
-/*  Basic Style 
-/* =================================== */
+
 ::-moz-selection {
-  /* Code for Firefox */
   background-color: #ad9966;
   color: #fff;
 }
@@ -18,33 +10,31 @@
 }
 
 ::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
   color: #777777;
   font-weight: 300;
 }
 
 :-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
+
   color: #777777;
   opacity: 1;
   font-weight: 300;
 }
 
 ::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
   color: #777777;
   opacity: 1;
   font-weight: 300;
 }
 
 :-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
+
   color: #777777;
   font-weight: 300;
 }
 
 ::-ms-input-placeholder {
-  /* Microsoft Edge */
+
   color: #777777;
   font-weight: 300;
 }
@@ -2478,10 +2468,7 @@ h6 {
   padding-top: 8px;
 }
 
-/* End Home Banner Area 
-============================================================================================ */
-/* Start Banner Area 
-============================================================================================ */
+
 .banner-area {
   background: url(../pictures/header-bg.png) no-repeat center;
 }
@@ -2530,20 +2517,14 @@ h6 {
   padding-top: 8px;
 }
 
-/* End Banner Area 
-============================================================================================ */
-/* Start About Area css
-============================================================================================ */
+
 @media (max-width: 991px) {
   .about-area .section-title {
     padding-top: 60px;
   }
 }
 
-/* End About Area css
-============================================================================================ */
-/* Menu List Area css
-============================================================================================ */
+
 .menu-area .section-title {
   padding-right: 55px;
 }
@@ -2637,10 +2618,7 @@ h6 {
   margin: 0;
 }
 
-/* End Menu List Area css
-============================================================================================ */
-/* Start Gallery Area css
-============================================================================================ */
+
 .gallery-area {
   padding: 240px 0 90px;
 }
@@ -2727,10 +2705,6 @@ h6 {
   transform: rotate(45deg);
 }
 
-/* End Gallery Area css
-============================================================================================ */
-/* Start Reservation Area css
-============================================================================================ */
 .reservation-area .section-title {
   padding-right: 55px;
 }
@@ -2789,18 +2763,12 @@ h6 {
   width: 100%;
 }
 
-/* End Reservation Area css
-============================================================================================ */
-/* End Chefs Quotes Area css
-============================================================================================ */
+
 .chefs-quotes-area .section-title {
   margin-top: 50px;
 }
 
-/* End Chefs Quotes Area css
-============================================================================================ */
-/* Start Callto Action Area css
-============================================================================================ */
+
 .callto-action-area {
   position: relative;
 }
@@ -2884,10 +2852,7 @@ h6 {
   }
 }
 
-/* End Callto Action Area css
-============================================================================================ */
-/* Start Contact Area css
-============================================================================================ */
+
 .contact-area .section-title p {
   margin-bottom: 5px;
 }
@@ -2939,12 +2904,7 @@ h6 {
   }
 }
 
-/* End Contact Area css
-============================================================================================ */
-/* =================================== */
-/*  Blog Styles
-/* =================================== */
-/*============ Start Blog Home Styles  =============*/
+
 .blog-home-banner {
   background: url(../pictures/header-bg.png) bottom;
   background-size: cover;
@@ -3436,8 +3396,6 @@ h6 {
   color: #000;
 }
 
-/*============ End Blog Home Styles  =============*/
-/*============ Start Blog Single Styles  =============*/
 .single-post-area {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -3684,11 +3642,6 @@ h6 {
   color: #ad9966 !important;
 }
 
-/*============ End Blog Single Styles  =============*/
-/* =================================== */
-/*  Footer Styles
-/* =================================== */
-/*-------- start footer Area -------------*/
 .footer-area {
   background-color: #04091e;
 }
@@ -3841,6 +3794,4 @@ h6 {
   color: #ffffff;
 }
 
-/*-------- end footer Area -------------*/
 
-/*# sourceMappingURL=main.css.map */
