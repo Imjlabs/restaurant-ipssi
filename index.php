@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 use App\Controller\PageController;
 use App\Controller\MenuController;
 use App\Controller\ReservationController;
@@ -30,5 +32,8 @@ else {
     }
     else if ($_GET['action'] == "valideRegistration") {
         echo (new UserController)->valideRegistration();
+    }
+    else if ($_GET['action'] == "logout") {
+        echo (new UserController)->logout();
     }
 }

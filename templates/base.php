@@ -16,10 +16,15 @@
     <link rel="stylesheet" href="./src/css/bootstrap.css">
     <link rel="stylesheet" href="./src/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="./src/css/main.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./src/css/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="./src/css/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="./src/css/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="./src/css/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="./src/css/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="./src/css/util3.css">
+	<link rel="stylesheet" type="text/css" href="./src/css/main3.css">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i|Roboto:400,500" rel="stylesheet">
-    <?php foreach ($links as $link) : ?>
-        <?= $link ?>
-    <?php endforeach ?>
 
 </head>
 
@@ -79,7 +84,7 @@
 								</li>
 								
 								<li class="nav-item">
-									<a class="nav-link" href="./?action=logout">Deconnexion</a>
+									<a class="nav-link" href="./?action=login">Connexion</a>
 								</li>
 							</ul>
 						</div>
@@ -90,29 +95,33 @@
 	</header>
     <?= $content ?>
     <footer class="footer-area section-gap">
-			<div class="container">
-				<div class="row">
-					
-					<div class="col-lg-4  col-md-6 col-sm-6">
-						<div class="single-footer-widget">
-							<h4>Poulet</h4>
-							<div class="" id="mc_embed_signup">
-								<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-								 method="get">
-									<div class="input-group">
-										<input type="text" class="form-control" name="EMAIL" placeholder="Rechercher Poulet" onfocus="this.placeholder = ''"
-										 onblur="this.placeholder = 'Rechercher Burger'" required="" type="email">
-										<div class="input-group-btn">
-											<button class="btn btn-default" type="search">
-												<span class="lnr lnr-arrow-right"></span>
-											</button>
-										</div>
-										<div class="info"></div>
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-lg-4  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h4>© Restaurant IPSSI 2022</h4>
+						<!-- <div class="" id="mc_embed_signup">
+							<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+								method="get">
+								<div class="input-group">
+									<input type="text" class="form-control" name="EMAIL" placeholder="Rechercher Poulet" onfocus="this.placeholder = ''"
+										onblur="this.placeholder = 'Rechercher Burger'" required="" type="email">
+									<div class="input-group-btn">
+										<button class="btn btn-default" type="search">
+											<span class="lnr lnr-arrow-right"></span>
+										</button>
 									</div>
-								</form>
-							</div>
-						</div>
+									<div class="info"></div>
+								</div>
+							</form>
+						</div> -->
 					</div>
 				</div>
 			</div>
-		</footer>
+		</div>
+	</footer>
+	<?php foreach ($scripts as $script) : ?>
+		<?= $script; ?>
+	<?php endforeach; ?>
+</body>

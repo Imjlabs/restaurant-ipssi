@@ -88,6 +88,11 @@ class UserController extends DefaultController {
 
     // }
 
+    public function logout ()
+    {
+        session_destroy();
+    }
+
     public function add ($firstName, $lastName, $adress, $phone, $city, $email, $status, $password)
     {
         $user = new User;
