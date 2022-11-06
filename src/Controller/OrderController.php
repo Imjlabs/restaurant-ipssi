@@ -3,11 +3,11 @@ namespace App\Controller;
 
 use Core\Controller\DefaultController;
 
-class ReservationController extends DefaultController {
+class MenuController extends DefaultController {
 
     public function index() {
-        $this->render("reservation/index", null, "Réservation", 
-        [  
+        $this->render("order/index", null, "Commande", 
+        [
             
         ]);
     }

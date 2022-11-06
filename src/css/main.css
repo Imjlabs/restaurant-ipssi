@@ -2893,9 +2893,10 @@ h6 {
 }
 
 .blog-home-banner {
-  background: url(../pictures/header-bg.png) bottom;
+  background-image: url('../pictures/header-bg.png');
   background-size: cover;
   padding: 130px 0px;
+  z-index: 1;
 }
 .blog-home-banner h1 span {
   color: #ad9966;

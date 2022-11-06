@@ -3,10 +3,10 @@ namespace App\Controller;
 
 use Core\Controller\DefaultController;
 
-class PageController extends DefaultController {
+class MenuController extends DefaultController {
 
     public function index() {
-        $this->render("page/index", null, "Accueil", 
+        $this->render("menu/index", null, "Menu", 
         [
 
         ]);
