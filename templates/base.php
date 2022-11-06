@@ -13,19 +13,7 @@
     <?php foreach ($links as $link) : ?>
         <?= $link ?>
     <?php endforeach ?>
-	<!--
-			CSS
-			============================================= -->
 
-	<!-- <link rel="stylesheet" href="css/linearicons.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/availability-calendar.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="css/nice-select.css">
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
-	<link rel="stylesheet" href="css/main.css"> -->
 </head>
 
 <body>
@@ -44,12 +32,9 @@
 
 					</div>
 
-					<div class="col-3 logo">
-						<a href="index2.html"><img class="mx-auto" src="img/logo.png" alt="" width="270" height="100"></a>
-					</div>
 					<nav class="col navbar navbar-expand-md justify-content-end">
 
-						<!-- Toggler/collapsibe Button -->
+				
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 							<span class="lnr lnr-menu"></span>
 						</button>
@@ -134,15 +119,6 @@
 								</form>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="footer-bottom row align-items-center justify-content-between">
-					<div class="col-lg-6 col-sm-12 footer-social">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-dribbble"></i></a>
-						<a href="#"><i class="fa fa-behance"></i></a>
-						<a href="#"><i class="fa fa-whatsapp"></i></a>
 					</div>
 				</div>
 			</div>
