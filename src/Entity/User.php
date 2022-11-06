@@ -4,13 +4,13 @@ namespace App\Entity;
 class User {
 
     private int $id;
-    private string $nom;
-    private string $prenom;
-    private string $adresse;
-    private string $telephone;
-    private string $ville;
+    private string $firstName;
+    private string $lastName;
+    private string $adress;
+    private string $phone;
+    private string $city;
     private string $email;
-    private string $statut;
+    private string $status;
     private string $password;
 
     public function getId(): int
@@ -18,54 +18,59 @@ class User {
         return $this->id;
     }
 
-    public function getNom(): string
+    public function setId(int $id)
     {
-        return $this->nom;
+        $this->id = $id;
     }
 
-    public function setNom(string $nom)
+    public function getFirstName(): string
     {
-        $this->nom = $nom;
+        return $this->firstName;
     }
 
-    public function getPrenom(): string
+    public function setFirstName(string $firstName)
     {
-        return $this->prenom;
+        $this->firstName = $firstName;
     }
 
-    public function setPrenom(string $prenom)
+    public function getLastName(): string
     {
-        $this->prenom = $prenom;
+        return $this->lastName;
     }
 
-    public function getAdresse(): string
+    public function setLastName(string $lastName)
     {
-        return $this->adresse;
+        $this->lastName = $lastName;
     }
 
-    public function setAdresse(string $adresse)
+    public function getAdress(): string
     {
-        $this->adresse = $adresse;
+        return $this->adress;
     }
 
-    public function getTelephone(): string
+    public function setAdress(string $adress)
     {
-        return $this->telephone;
+        $this->adress = $adress;
     }
 
-    public function setTelephone(string $telephone)
+    public function getPhone(): string
     {
-        $this->name = $telephone;
+        return $this->phone;
+    }
+
+    public function setPhone(string $phone)
+    {
+        $this->phone = $phone;
     }
     
-    public function getVille(): string
+    public function getCity(): string
     {
-        return $this->ville;
+        return $this->city;
     }
 
-    public function setVille(string $ville)
+    public function setCity(string $city)
     {
-        $this->ville = $ville;
+        $this->city = $city;
     }
 
     public function getEmail(): string
@@ -73,19 +78,19 @@ class User {
         return $this->email;
     }
 
-    public function setEmai(string $email)
+    public function setEmail(string $email)
     {
         $this->email = $email;
     }
 
-    public function getStatut(): string
+    public function getStatus(): string
     {
-        return $this->statut;
+        return $this->status;
     }
 
-    public function setStatut(string $statut)
+    public function setStatus(string $status)
     {
-        $this->statut = $statut;
+        $this->status = $status;
     }
 
     public function getPassword(): string

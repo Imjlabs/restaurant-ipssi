@@ -6,14 +6,9 @@ use Core\Controller\DefaultController;
 class PageController extends DefaultController {
 
     public function index() {
-        $this->render("page/index");
-    }
-
-    public function contact() {
-        $this->render("page/contact");
-    }
-
-    public function history() {
-        $this->render("page/history");
+        $this->render("page/index", null, "Accueil", 
+        [
+            '<link rel="stylesheet" href="./src/css/index.css">'
+        ]);
     }
 }

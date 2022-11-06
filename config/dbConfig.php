@@ -2,7 +2,7 @@
 
 $dbConfig = [
     'host' => "localhost:3306",
-    'database' => "blog",
+    'db' => "restaurant",
     'user' => "root",
-    'password' => "root"
+    'password' => "suuv"
 ];

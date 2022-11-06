@@ -1,0 +1,37 @@
+section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+input {
+    background-color: #f0f0f0;
+    border: none;
+    height: 30px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 5px 10px;
+    width: 200px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.button {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    height: 30px;
+    margin-bottom: 5px;
+    width: 100px;
+}
+
+#login {
+    border-bottom: #000 solid 1px;
+    color: #000;
+    text-decoration: none;
+}

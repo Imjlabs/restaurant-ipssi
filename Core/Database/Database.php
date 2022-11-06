@@ -45,18 +45,20 @@ class Database {
         return $this->pdo;
     }
 
-    protected function getData (string $stmt, bool $one = false): array|object
+    protected function getData (string $stmt, bool $one = false)
     {
         $query = $this->pdo->query($stmt, \PDO::FETCH_CLASS, "App\Entity\\". $this->entity);
         if ($one) {
             $data = $query->fetch();
-        } else {
+        }
+        else {
             $data = $query->fetchAll();
         }
-        var_dump($data);
+        //var_dump($data);
 
-        return $data ? 
-            $data : 
-            throw new \Exception("Aucune donnée n'a été trouvée");
+        return $data;
+            //$data : 
+            //throw new \Exception("Aucune donnée n'a été trouvée");
+            //null;
     }
 }

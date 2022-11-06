@@ -1,8 +1,9 @@
-.connection {
+section {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding-top: 100px;
 }
 
 input {
@@ -10,11 +11,16 @@ input {
     border: none;
     height: 30px;
     margin-bottom: 20px;
+    outline: none;
     padding: 5px 10px;
     width: 200px;
 }
 
-button {
+input:focus {
+    outline: none;
+}
+
+.button {
     background-color: #000;
     color: #fff;
     cursor: pointer;
@@ -28,4 +34,11 @@ button {
     border-bottom: #000 solid 1px;
     color: #000;
     text-decoration: none;
+}
+
+footer {
+    bottom: 0;
+    height: 129.2px;
+    position: absolute;
+    width: 100%;
 }

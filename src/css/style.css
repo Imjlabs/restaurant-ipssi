@@ -27,8 +27,14 @@ h1 {
     margin-right: 30px;
 }
 
-section {
-    min-height: 462px;
+.button_nav {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    height: 30px;
+    margin-bottom: 5px;
+    width: 100px;
 }
 
 footer, .link_footer {

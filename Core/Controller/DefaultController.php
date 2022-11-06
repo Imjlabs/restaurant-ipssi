@@ -3,7 +3,7 @@ namespace Core\Controller;
 
 class DefaultController {
 
-    protected function render (string $viewPath, ?array $parameters = [])
+    protected function render (string $viewPath, ?array $parameters = [], string $title, ?array $links = [], ?array $scripts = [])
     {
         ob_start();
             if (isset($parameters)) {
