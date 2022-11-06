@@ -7,7 +7,6 @@
 	<meta name="keywords" content="">
 	<meta charset="UTF-8">
 	<title>IPSSI Restaurant</title>
-<<<<<<< Updated upstream
     <link rel="stylesheet" href="./src/css/linearicons.css">
     <link rel="stylesheet" href="./src/css/font-awesome.min.css">
     <link rel="stylesheet" href="./src/css/availability-calendar.css">
@@ -26,21 +25,6 @@
 	<link rel="stylesheet" type="text/css" href="./src/css/util3.css">
 	<link rel="stylesheet" type="text/css" href="./src/css/main3.css">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i|Roboto:400,500" rel="stylesheet">
-=======
-	<link rel="stylesheet" href="./src/css/linearicons.css">
-	<link rel="stylesheet" href="./src/css/font-awesome.min.css">
-	<link rel="stylesheet" href="./src/css/availability-calendar.css">
-	<link rel="stylesheet" href="./src/css/magnific-popup.css">
-	<link rel="stylesheet" href="./src/css/nice-selec.css">
-	<link rel="stylesheet" href="./src/css/owl.carousel.css">
-	<link rel="stylesheet" href="./src/css/bootstrap.css">
-	<link rel="stylesheet" href="./src/css/bootstrap-datepicker.css">
-	<link rel="stylesheet" href="./src/css/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i|Roboto:400,500" rel="stylesheet">
-	<?php foreach ($links as $link) : ?>
-		<?= $link ?>
-	<?php endforeach ?>
->>>>>>> Stashed changes
 
 </head>
 
@@ -113,32 +97,6 @@
 			</div>
 		</div>
 	</header>
-<<<<<<< Updated upstream
-    <?= $content ?>
-    <footer class="footer-area section-gap">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-lg-4  col-md-6 col-sm-6">
-					<div class="single-footer-widget">
-						<h4>© Restaurant IPSSI 2022</h4>
-						<!-- <div class="" id="mc_embed_signup">
-							<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-								method="get">
-								<div class="input-group">
-									<input type="text" class="form-control" name="EMAIL" placeholder="Rechercher Poulet" onfocus="this.placeholder = ''"
-										onblur="this.placeholder = 'Rechercher Burger'" required="" type="email">
-									<div class="input-group-btn">
-										<button class="btn btn-default" type="search">
-											<span class="lnr lnr-arrow-right"></span>
-										</button>
-									</div>
-									<div class="info"></div>
-								</div>
-							</form>
-						</div> -->
-					</div>
-=======
 	<?= $content ?>
 	<footer class="footer-area section-gap mt-15">
 		<div class="container">
@@ -155,7 +113,6 @@
 					<p class="information"><a class="link_footer" href="./index.php">Accueil</a></p>
 					<p class="information"><a class="link_footer" href="./index.php?action=menu">Menu</a></p>
 					<p class="information"><a class="link_footer" href="./index.php?action=reservation">Réservation</a></p>
->>>>>>> Stashed changes
 				</div>
 				<div class="bloc">
 					<h1 class="title_footer">Politique</h1>
@@ -166,12 +123,3 @@
 
 			</div>
 		</div>
-<<<<<<< Updated upstream
-	</footer>
-	<?php foreach ($scripts as $script) : ?>
-		<?= $script; ?>
-	<?php endforeach; ?>
-</body>
-=======
-	</footer>
->>>>>>> Stashed changes
