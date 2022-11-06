@@ -26,8 +26,6 @@ class ReservationController extends DefaultController
         $reservation->setEmail($email);
         $reservation->setPhoneNumber($phone_number);
         $reservation->setReservation($reserver);
-        $reservation->setCreated_at(date("Y/m/d H:i:s"));
-        $reservation->setUpdated_at(date("Y/m/d H:i:s"));
         $this->model->save($reservation);
     }
 
@@ -45,13 +43,13 @@ class ReservationController extends DefaultController
         $status = "erreur";
 
         try {
-            $this->add($fullname, $email, $reserver, $phone_number, 0, 0);
+            $this->add($fullname, $email, $reserver, $phone_number);
             $status = "valide";
         } catch (\Throwable $th) {
             $response = [
                 "status" => $status
             ];
-            echo json_encode($response);
+            echo $th;
         }
         var_dump($_GET);
     }

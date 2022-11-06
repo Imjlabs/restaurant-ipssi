@@ -5,7 +5,7 @@
 				<form class="booking-form" action="./?action=booking" method="GET">
 					<h1 align="center">Réserver une table</h1>
 
-					<input name="action" id="name" placeholder="Nom" value="booking" display="none">
+					<input name="action" type="hidden" id="name" placeholder="Nom" value="booking">
 
 					<div class="row">
 						<div class="col-lg-12 d-flex flex-column mb-20">

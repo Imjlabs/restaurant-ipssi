@@ -15,10 +15,8 @@ class ReservationModel extends DefaultModel
         $fullname = $reservation->getFullName();
         $email = $reservation->getEmail();
         $phone_number = $reservation->getPhoneNumber();
-        $reservation = $reservation->getReservation();
-        $created_at = $reservation->getCreated_at();
-        $updated_at = $reservation->getUpdated_at();
-        $stmt = "INSERT INTO reserver (nom, email, telephone, reservation, created_at, updated_at) VALUES ('$fullname', '$email', '$phone_number','$reservation', '$created_at', '$updated_at')";
+        $reserver = $reservation->getReservation();
+        $stmt = "INSERT INTO reserver (nom, email, telephone, reservation) VALUES ('$fullname', '$email', '$phone_number','$reserver')";
         $prepare = $this->pdo->prepare($stmt);
         $prepare->execute();
     }
