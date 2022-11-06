@@ -30,29 +30,18 @@
                 <span class="login100-form-title p-b-49">
                     Votre compte a bien été créer
                 </span>
-                
-                <!-- <div class="text-right p-t-8 p-b-31">
-                    <a href="#">
-                        Forgot password?
-                    </a>
-                </div> -->
+        
                 
                 <div class="container-login100-form-btn" style="margin-top:20px">
                     <div class="wrap-login100-form-btn">
                         <div class="login100-form-bgbtn"></div>
-                        <!-- <button class="login100-form-btn" type="submit">
-                            Login
-                        </button> -->
                             <a href="./?action=login"><button class="login100-form-btn" id="button">Connexion</button></a>
                     </div>
                 </div>
 
                 <div class="container-login100-form-btn" style="margin-top:20px">
                     <div class="wrap-login100-form-btn">
-                        <div class="login100-form-bgbtn"></div>
-                        <!-- <button class="login100-form-btn" type="submit">
-                            Login
-                        </button> -->
+                        <div class="login100-form-bgbtn"></div>     
                             <a href="./"><button class="login100-form-btn" id="button">Accueil</button></a>
                     </div>
                 </div>

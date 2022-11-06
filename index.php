@@ -39,4 +39,7 @@ else {
     else if ($_GET['action'] == "logout") {
         echo (new UserController)->logout();
     }
+    else if ($_GET['action'] == "booking") {
+        echo (new ReservationController)->booking();
+    }
 }
