@@ -59,16 +59,21 @@
 											Résersation et Commande
 										</a>
 										<div class="dropdown-menu">
-												<style>
-													ul.a {
-														list-style-type: square;
-													}
-												</style>
-												<ul class="a">
-													<li>
-														<a class="dropdown-item" href="./?action=order">Commande en Ligne</a>
-													</li>
-												</ul>
+											<style>
+												ul.a {
+													list-style-type: square;
+												}
+											</style>
+											<ul class="a">
+												<li>
+													<a class="dropdown-item" href="./?action=reservation">Réservations</a>
+												</li>
+											</ul>
+											<ul class="a">
+												<li>
+													<a class="dropdown-item" href="./?action=order">Commande en Ligne</a>
+												</li>
+											</ul>
 										</div>
 									</li>
 								</li>

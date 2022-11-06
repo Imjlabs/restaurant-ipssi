@@ -1,9 +1,10 @@
 <?php
 
 use App\Controller\PageController;
-use App\Controller\UserController;
 use App\Controller\MenuController;
 use App\Controller\ReservationController;
+use App\Controller\OrderController;
+use App\Controller\UserController;
 
 define("ROOT", __DIR__);
 require ROOT. "/vendor/autoload.php";
@@ -18,6 +19,9 @@ else {
     else if ($_GET['action'] == "reservation") {
         (new ReservationController)->index();
     }
+    else if ($_GET['action'] == "order") {
+        (new OrderController)->index();
+    }
     else if ($_GET['action'] == "login") {
         (new UserController)->login();
     }
@@ -27,6 +31,4 @@ else {
     else if ($_GET['action'] == "valideRegistration") {
         echo (new UserController)->valideRegistration();
     }
-
-
 }
