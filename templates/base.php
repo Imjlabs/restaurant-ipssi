@@ -95,7 +95,7 @@
 			</div>
 		</div>
 	</header>
-    
+    <?= $content ?>
     <footer class="footer-area section-gap">
 			<div class="container">
 				<div class="row">
