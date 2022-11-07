@@ -86,10 +86,22 @@
 									</div>
 								</li>
 								</li>
-
-								<li class="nav-item">
-									<a class="nav-link" href="./?action=login">Connexion</a>
-								</li>
+								<?php
+								if (!isset($_SESSION['user'])) {
+									?>
+									<li class="nav-item">
+										<a class="nav-link" href="./?action=login">Connexion</a>
+									</li>
+									<?php
+								}
+								else {
+									?>
+									<li class="nav-item">
+										<a class="nav-link" href="./?action=logout">Deconnexion</a>
+									</li>
+									<?php
+								}
+								?>
 							</ul>
 						</div>
 					</nav>

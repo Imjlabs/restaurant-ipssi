@@ -54,7 +54,7 @@
                             <button class="login100-form-btn" id="button">Connexion</button>
                     </div>
                 </div>
-
+                <p id="error"></p>
                 <div class="flex-col-c p-t-155">
 
                     <a href="./?action=registration" class="txt2">

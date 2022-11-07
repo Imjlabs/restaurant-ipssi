@@ -1,6 +1,7 @@
 const button = document.getElementById("button")
 const email = document.getElementById("email")
 const password = document.getElementById("password")
+const error = document.getElementById("error")
 
 let regExp = new RegExp('^[a-zA-Z0-9.-_]+[@]{1}[a-zA-Z0-9.-_]+[.]{1}[a-z]{2,10}$')
 
@@ -30,7 +31,7 @@ button.addEventListener("click", (e) => {
     e.preventDefault()
     if (regExp.test(email.value) && password.value.length >= 8 && password.value.length <= 16)
     {
-        window.location.href = "./index.php"
+        valide()
     }
     else
     {
@@ -44,3 +45,20 @@ button.addEventListener("click", (e) => {
         }
     }
 })
+
+async function valide ()
+{
+    try {
+        const data = await fetch('./?action=valideLogin&email=' + encodeURIComponent(email.value) + '&password=' + encodeURIComponent(password.value))
+        const response = await data.json()
+        if (response.status == "valide") {
+            window.location.href = "./index.php?"
+        }
+        else {
+            error.innerHTML = "L'adresse mail ou le mot de passe est incorret"
+        }
+    }
+    catch (execption) {
+        console.error(execption)
+    }
+}

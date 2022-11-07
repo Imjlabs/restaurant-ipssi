@@ -2,6 +2,7 @@
 
 session_start();
 
+
 use App\Controller\PageController;
 use App\Controller\MenuController;
 use App\Controller\ReservationController;
@@ -27,6 +28,9 @@ else {
     else if ($_GET['action'] == "login") {
         (new UserController)->login();
     }
+    else if ($_GET['action'] == "valideLogin") {
+        echo (new UserController)->valideLogin();
+    }
     else if ($_GET['action'] == "registration") {
         (new UserController)->registration();
     }
@@ -34,10 +38,10 @@ else {
         echo (new UserController)->valideRegistration();
     }
     else if ($_GET['action'] == "registrationConfirmation") {
-        echo (new UserController)->registrationConfirmation();
+        (new UserController)->registrationConfirmation();
     }
     else if ($_GET['action'] == "logout") {
-        echo (new UserController)->logout();
+        (new UserController)->logout();
     }
     else if ($_GET['action'] == "booking") {
         echo (new ReservationController)->booking();

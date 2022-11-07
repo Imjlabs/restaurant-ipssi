@@ -57,7 +57,7 @@ button.addEventListener("click", (e) => {
     e.preventDefault()
     if (regexName.test(fullName.value) && regexEmail.test(email.value) && password.value.length >= 8 && password.value.length <= 16 && regexPhoneNumber.test(phone_number.value))
     {
-        getUser()
+        valide()
     }
     else
     {
@@ -80,7 +80,7 @@ button.addEventListener("click", (e) => {
     }
 })
 
-async function getUser ()
+async function valide ()
 {
     try {
         const data = await fetch('./?action=valideRegistration&name=' + encodeURIComponent(fullName.value) + '&email=' + encodeURIComponent(email.value) + '&password=' + encodeURIComponent(password.value) + '&phone_number=' + encodeURIComponent(phone_number.value))

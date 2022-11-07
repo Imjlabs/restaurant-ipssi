@@ -78,7 +78,8 @@ class UserController extends DefaultController {
         $user = $this->model->findByEmail($email);
         $status = "erreur";
         if ($user != false) {
-            if ($password == $user["password"]) {
+            $hash_password = hash('sha256', $password);
+            if ($hash_password == $user->getPassword()) {
                 $status = "valide";
                 $_SESSION['user'] = $user;
             }
@@ -92,6 +93,7 @@ class UserController extends DefaultController {
     public function logout ()
     {
         session_destroy();
+        header('Location: ./');
     }
 
     public function add ($fullname, $email, $password, $phone_number, $status, $admin)
