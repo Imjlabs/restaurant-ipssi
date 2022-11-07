@@ -9,7 +9,7 @@ class User {
     private string $password;
     private string $phone_number;
     private int $status;
-    private bool $admin;
+    private int $admin;
     private string $created_at;
     private string $updated_at;
 
